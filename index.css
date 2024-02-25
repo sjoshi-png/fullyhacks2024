@@ -90,36 +90,9 @@ html {
 }
 
 #game{
-  width: 400px;
-  height: 300px;<!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Define your CSS file here so you can style your HTML -->
-      <link rel="stylesheet" href="index.css" />
-      <title>Flappy Cat</title>
-  </head>
-  <body>
-  <div class="container">
-      <ul class="nav">
-          <li>
-              <a class="navlink" href="/">Home</a>
-          </li>
-          <li>
-              <a class="navlink" href="maze.html">Maze</a>
-          </li>
-          <li>
-              <a class="navlink" href="flappycat.html"> Flappy Cat</a>
-          </li>
-      </ul>
-      <h1 class="title">Welcome to Flappy Cat</h1>
-      <!-- Add a canvas element for the game -->
-      <canvas id="gameCanvas" width="480" height="320"></canvas>
-      <script src="flappycat.js"></script>
-  </div>
-  border: 1px solid black;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid #FFFFFF;
   margin: auto;
   overflow: hidden;
 }
@@ -144,11 +117,12 @@ html {
   top: -550px;
   animation: block 1s infinite linear;
 }
-#character{
-  width: 20px;
-  height: 20px;
-  background-color: red;
+
+#character {
+  width: 100px; 
+  height: 75px;
+  background-image: url('/images/neon_cat.jpg');
+  background-size: cover;
   position: absolute;
-  top: 100px;
-  border-radius: 50%;
+  top: 50px;
 }
