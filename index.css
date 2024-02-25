@@ -7,26 +7,30 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  --body_bg: #fffaf1;
-  --sky_100: #abe1ff;
-  --sky_300: #18aaff;
-  --blue_300: #385ddf;
-  --purple_300: #9ea8ff;
-  --purple_hover: #3b3561;
-  --purple_500: #4f38df;
+  --body_bg: #000000;
+  --sky_100: #00a6ff;
+  --sky_300: #0040ff;
+  --blue_300: rgb(97, 0, 253);
+  --purple_300: #002fffef;
+  --purple_hover: #FF0000;
+  --purple_500: #2200ffb8;
   --pink_700: #b438df;
-  --pink_400: #ff8f8f;
-  --pink_300: #df389c;
-  --pink_100: #ffabce;
-  --orange_300: #ffc985;
-  --orange_100: #ffedcc;
+  --pink_400: #ff0000;
+  --pink_300: #ff0099;
+  --pink_100: #ff006a;
+  --orange_300: #FFFF00;
+  --orange_100: #ffa600;
   --purple_main: #340b67;
-  --purple_main_hover: #b49fcc;
+  --purple_main_hover: #7700ff;
 }
 
 html {
   background-color: var(--body_bg);
   font-family: "Rubik";
+}
+
+.maze {
+  background-color: white;
 }
 
 .container {
@@ -48,7 +52,7 @@ html {
 
 .navlink { 
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     list-style: none;
 }
 
@@ -65,4 +69,22 @@ html {
 .fullypic {
   margin-top: 2rem;
   object-fit: cover;
+}
+
+.maze {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  border: 2px solid var(--purple_main);
+}
+.maze div {
+  background-color: black;
+  border: 1px solid var(--purple_main);
+}
+.start {
+  background-color: var(--pink_100)
+}
+.end {
+  background-color: green;
 }
