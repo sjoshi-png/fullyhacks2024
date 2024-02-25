@@ -101,11 +101,12 @@ html {
   height: 500px;
   background-color: black;
   position: relative;
-  left: 400px;
-  animation: block 1s infinite linear;
+  left: 1200px;
+  top: -100px;
+  animation: block 2.5s infinite linear;
 }
 @keyframes block{
-  0%{left:400px}
+  0%{left:1000px}
   100%{left:-50px}
 }
 #hole{
@@ -113,9 +114,9 @@ html {
   height: 150px;
   background-color: rgb(13, 0, 255);
   position: relative;
-  left: 400px;
-  top: -550px;
-  animation: block 1s infinite linear;
+  left: 1200px;
+  top: -680px;
+  animation: block 2.5s infinite linear;
 }
 
 #character {
@@ -124,5 +125,5 @@ html {
   background-image: url('/images/neon_cat.jpg');
   background-size: cover;
   position: absolute;
-  top: 50px;
+  top: 100px;
 }
